@@ -1,0 +1,18 @@
+#!/bin/bash
+
+F=`basename "$1" .txt`
+
+cat "$1" | sed 's/\*\*\*/     \*/g' | sed 's/\*\*/    \*/g' > "$1".tmp
+
+cat "$1".tmp  | pandoc -f markdown_github -c /Users/cayco/Documents/Hazel/github-pandoc.css | sed 's/\[ \]/\<input type\=\"checkbox\" \>\<\/input\>/g'  > "$F".html
+
+wkhtmltopdf --checkbox-svg /Users/cayco/Documents/Hazel/iconmonstr-checkbox-20.svg "$F".html "$F".pdf
+
+mv "$F".pdf /Users/cayco/Documents/notatki/
+
+pandoc -s -S "$F".html -o "$F".docx
+
+mv "$F".docx /Users/cayco/Documents/notatki/
+
+rm -f "$F".html
+rm -f "$1".tmp

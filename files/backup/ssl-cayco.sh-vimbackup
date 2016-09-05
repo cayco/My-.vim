@@ -1,0 +1,4 @@
+
+eval "$(docker-machine env default)"
+
+docker run -it --rm -p 443:443 -p 80:80 --name letsencrypt -v "/Users/cayco/letsencrypt/etc/letsencrypt:/etc/letsencrypt" -v "/Users/cayco/letsencrypt/var/lib/letsencrypt:/var/lib/letsencrypt" -v "/Users/cayco/letsencrypt/var/log/letsencrypt:/var/log/letsencrypt" quay.io/letsencrypt/letsencrypt:latest -a manual -d www.cayco.pl --server https://acme-v01.api.letsencrypt.org/directory auth

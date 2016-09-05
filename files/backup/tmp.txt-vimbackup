@@ -1,0 +1,24 @@
+HIS zadania urlop 03.08.2016.txt
+
+## Dwa główne wątki:
+
+* RFP
+            * Aleksandra Ziołecka: sprawdzenie i potwierdzenie z dostępnym zespołu
+    arkusza do porównania dostawców
+              * Każda z ról: architekt, analityk, utrzymanie, vendor management powinna
+     zdefiniować swoje parametry do porównania ofert
+             * XLSa trzeba sprawdzić czy formuły są poprawne
+             * https://jira.luxmed.pl/browse/SEL-162
+        * Zebranie pytań od dostawców - Marzenna Miłek
+        * Aleksandra Ziołecka: przygotowanie odpowiedzi - koordynacja
+             * Przygotowanie (sprawdzenie) arkusza pytań i odpowiedzi -
+    https://jira.luxmed.pl/browse/SEL-180
+             * Ustawienie spotkań warsztatowych (Bartek Żabicki, Paweł Świerczyński,
+    Krystian Pastor i ew inni) od 22.08 lub wcześniej gdy pojawią się
+    pytania
+        * Inne: Adrian Otto: https://jira.luxmed.pl/browse/SEL-160
+* HIS minimum
+        * Adrian Otto: stworzenie HLD na podstawie znanych informacji z określeniem
+   wariantów dla systemów RIS/PACS we wszystkich placówkach Magodentu.
+   Przygotowanie rekomendacji wspólnie z Domenę Diagnostyki
+             * https://jira.luxmed.pl/browse/SEL-168

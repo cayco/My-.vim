@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+osascript -e '
+tell application "iTerm"
+	activate
+	set newWindow to (create window with default profile)
+	tell current session of first window
+		write text "'"${1//\"/}"'"
+	end tell
+	repeat while (exists newWindow)
+		delay 0.1
+	end repeat
+end tell'

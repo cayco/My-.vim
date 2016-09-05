@@ -1,0 +1,7 @@
+client = yes
+
+[stunnel]
+protocol = imap
+accept = 127.0.0.1:41194
+connect =  imap.gmail.com:993
+protocolHost = 10.9.40.22:3128

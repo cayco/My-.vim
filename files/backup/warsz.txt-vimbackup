@@ -1,0 +1,39 @@
+Podsumowanie warsztatów
+
+MBRK przygotuje ocenę merytoryczną - czy możecie podesłać w tym wątku?
+
+Paweł, Mateusz, Hubert, czy możecie podesłać swoje podsumowanie po warsztatach?
+
+Moje poniżej
+
+Wnioski ogólne:
+- warsztaty pokazały, że oferty przedstawione po RFI były nieprzemyślane i często były raczej obietnicami, przy których należy być ostrożnym (ryzyko nierealizacji)
+- mamy bardzo mało czasu na wdrożenie, prawdopodobnie trzeba będzie zmniejszyć jakość niektórych produktów nie krytycznych. To że ograniczamy zakres jest oczywiste dla wszystkich
+- z tego powodu wygląda na to, że lepiej będzie wybrać bardziej kompletny produkt ponieważ analizy (do umowy) dostosowań które trzeba zrobić w tym roku mogą spowodować dalsze opóźnienie
+- wdrożenie musi odbyć na przełomie lat z dwóch powodów: nie da się inaczej zorganizować rozliczeń NFZ przy przejściu z systemu na system oraz z powodu wprowadzania wymogu jednolitego pliku kontrolnego w księgowości
+- przy wdrożeniu w tym roku nie ma żadnego bufora czasowego
+- analizę powinniśmy zacząć już na początu sierpnia. Zaczynam już teraz zbierać materiały potrzebne dostawcom do analizy
+- musi powstać plan awaryjny (plan B - z Gabosem) gdyby nie udało się tego wdrożyć w tym roku. Najprawdopodobniej będzie oznaczać to przesunięcie wdrożenia na przełom 2017/2018 lub anulowanie projektu.
+
+Simple
+- największe braki produktu
+- ograniczenia architektoniczne (gruby klient, brak obsługi wielospółkowości i niezrozumienie powodu takiego wymagania, brak możliości skalowania sprzętu) są na tyle duże, że ten system może być nierozwojowy
+- brak doświadczenia przy integracjach
+- brak przedstawienia pomysłu na wdrożenie w tym roku
+- nieprzemyślana oferta - np. brak informacji o wirtualizacji, backupu, brak monitoringu
+- bardzo słaba prezentacja systemu BI - zupełnie oderwana od naszych potrzeb, brak wdrożeń tego w placówkach medycznych
+- dziwna deklaracja, że "nie chcą mieć nic wspólnego z DILO"
+
+SI Alma
+- poprawne podejście do integracji z RIS/PACS/LIS
+- dość dobry system ale lekarze krytycznie przyjęli nowy interfejs
+- część medyczna słabo zaprezentowana co zapewne miało wpływ na ocenę uż.
+- część szara dobrze przyjęta
+
+CGM
+- bardzo dobry prezenter części medycznej
+- system posiada bardzo dużo funkcjonalności biznesowych i technicznych
+- nie dostarczają nowych funkcjonalności w ramach licencji maintenance
+- nie obsługują podpisu elektronicznego w standardzie HL7 CDA (standard LUX MED)
+- słaba fukcjonalność apteki, potrzeba dorobienia bardziej zaawansowanych w tym pracowni cytostatyków. Sama pracownia jest właśnie zmieniana i w przyszłym tygodniu Ola organizuje spotkanie z ich dyr. odpowiedzialnym za te prace. To jest krytycznie potrzebny zestaw funkcjonalności i w ofercie powinniśmy mieć dokładną specyfikację co zostanie wytworzone. To jest element ryzyka.
+- zgodna z LUX MED metodyka pracy projektowej, bardzo dobrze przygotowana prezentacja i zespół merytoryczny na spotkaniu z IT

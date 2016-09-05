@@ -1,0 +1,71 @@
+Aniu, czy mogłabyś podesłać Pawłowi planu urlopowe osób z domeny medycznej, zaangażowanych w prace? Jestem dzisiaj na warsztatach całodniowych i nie mogę się tym zająć…
+
+Paweł, odnośnie umowy to trochę mnie zaskoczyło Twoje pytanie. Na początku tygodnia przesłałem Ci komplet danych i dokumentów które posiadam, po naszych poprzednich ustaleniach oraz rozmawialiśmy o podejściu - co mamy i co uzupełnię. 
+
+Kilka kwestii, np. odnośnie sposobu wdrożenia w etapach i zaadresowania obsługi w umowie dostosowań mieliśmy rozmawiać na warsztatach w tym tygodniu i takie rozmowy się odbywają. Przekazałem też Marzennie moje preferencje (umowa wdrożęniowa na box+krytyczne dostowania a na kolejne dostosowania zawarcie ograniczenia w umowy (cap) na najbardziej krytyczne modułu i rozwój iteracyjny/agile).
+
+Napisz proszę czego Ci brakuje to zorganizuję zespół żeby dostarczył.
+
+Co jest moim zdaniem gotowe do tego żebyście mogli rozpocząć prace:
+- zał. przedmiot umowy czyli opis usług i produktów
+- parametry SLA ustalone na poziomie biznesowym i Paweł Świerczyński będzie przekładał je na parametry techniczne do załącznika do umowy
+- zebrane wymagania do migracji danych
+- rozmawiałem z Tobą, że podstawowe fragmenty projektu (kolejne etapy, odbiory itp. robimy standardowo, jak w PACS). Tak to też omawiam na każdym z warsztatów w tym tygodniu.
+
+Toczą się prace nad:
+- aktualizacja zestawu wymagań - Paweł Świerczyński oraz MBRK
+- aktualizacja HLD - Mateusz Pruchniak
+
+i kilka standardowych załączników:
+- nr 24 Techniczne wymagania bezpieczenstwa dla systemu informatycznego.docx
+- nr 01 Reprezentanci Stron.docx
+- nr 17 Oswiadczenie o zachowaniu poufnosci.docx0
+- nr 16 Raport z Prac.docx
+- nr 15 Wzor Zamowienia Godzinowego.docx
+- nr 14 Wzor Zamowienia Ryczaltowego.docx
+- nr 13 Proces wprowadzania zmiany w systemie dostarczanym przez Dostawce zewnetrznego.docx
+- nr 11 Wzor Protokolu Odbioru.docx
+- nr 10 Raport z Testow.docx
+- nr 07 Zasady korzystania z dostepu do VPN dla pracownikow stron trzecich.docx
+- nr 02 Zasady dostepu do serwerowni LUX MED.docx
+-
+
+I moim zdaniem poniższe punkty wymagają konsultacji ze mną, nie mam większych wymagań poza tym żeby były:
+- licencje, prawa autorskie
+- wykaz licencji
+- wykaz sprzętu
+- IPR'y (prawa autorskie, licencje)
+- harmonogram płatności
+- inne niestandardowe warunki płatności
+- niestandardowe zobowiązania wykonawcy
+- niestandardowe zobowiązania zamawiającego
+- zakres odpowiedzialności wykonawcy
+- gwarancje na oprogramowanie
+- gwarancje na sprzęt
+- gwarancje spełnienia wymagań niefunkcjonalnych
+- inne gwarancje
+- czy zgadzamy się na angażowanie podwykonawców?
+- rozwiązania, moduły, procesy, dokumentacja
+- opis systemu kar umownych:
+- jakość produktów i usług
+- terminowość realizacji
+- inne, kluczowe warunki umowne
+- naruszenie poufności
+- naruszenie poufności danych osobowych
+- powierzenie przetwarzania danych osobowych
+- audytowalność Wykonawcy oraz jego poddostawców
+- role
+- zakres i forma komunikacji
+- Sposób zmiany umowy – mniej/ bardziej istotne zapisy
+- Warunki wypowiedzenie/ rozwiązanie Umowy
+- okres wypowiedzenia zamawiającego
+- okres wypowiedzenia umowy ze strony Dostawcy
+- wypowiedzenie natychmiastowe, kluczowe warunki wypowiedzenia umowy
+- Exit plan
+- warunki uruchomienia exit planu
+- dokumentacja
+- kody źródłowe
+- transfer wiedzy, warsztaty, szkolenia
+- wsparcie w uruchomieniu rozwiązania w alternatywnym modelu
+- Postanowienia końcowe
+- niestandardowe postanowienia końcowe umowy

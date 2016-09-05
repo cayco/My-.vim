@@ -1,0 +1,171 @@
+Adam, dziękuję za wyjaśnienia. Dla mnie z tej Jiry nie wynika, że to dotyczy wszystkich uż. technicznych. Problem leży w tym że nie wskazywaliście również, że ukrycie danych jest „ukryciem” ponieważ mechanizmy integracji desktopowych 
+
+Bardzo proszę o kontakt o 8:00 z Przemkiem, ustalenie rozwiązania (kwestie techniczne o których piszesz). Dokonfigurujcie co trzeba.
+
+Asiu, poproszę o szybkie testy weryfikujące poprawkę na systemie testowym.
+
+Mariola, poproszę o przygotowanie CRa z tą zmianą.
+
+
+
+Pozdrawiam!
+ 
+Krzysztof Kajkowski
+Kierownik Projektu, Departament Projektów IT
+LUX MED Sp. z o.o., ul. Postępu 21C, 02-676 Warszawa
+m: +48 783 660 377 e: krzysztof.kajkowski@luxmed.pl
+
+Wiadomość napisana przez Helpdesk Grupa Q <hd@grupa-q.pl> w dniu 23.05.2016, o godz. 22:47:
+
+Krzysztof,
+
+Sprawa dotyczy integracji przy użyciu 'użytkowników technicznych' - z tego co wiem korzystacie z takowych w 100% wdrożonych integracji desktopowych.
+Oznaczyłem jako rozwiązaną - zgodnie z ustaleniami - gdy wdrażamy zmianę na systemie testowym i jesteśmy gotowi do jej wgrania na systemie produkcyjnym - tak też jest w tym przypadku od 23 stycznia. 
+
+W świetle tego, że sprawa została rozwiązana 23 stycznia, teraz dodatkowo przytaczam ten wątek z dodatkowym opisem - nie wydaje mi się, żeby nasza obecność jutro na spotkaniu u Was miała coś dodatkowego wnieść. 
+Z naszej strony czekamy cały czas na opis wykorzystania wywołać z RIS, abyśmy mogli wdrożyć konkretne zmiany, żeby to nie zaburzyło wywołań z RIS.
+
+Jeżeli sprawa ma być wdrożona na już - też nie widzę przeciwskazań.
+Zmiany które należy wprowadzić na produkcji to:
+- przypisać kody dostępu na użytkownikach technicznych (z rozwagą - my nie dostaliśmy odpowiedzi jakie którym użytkownikom, więc nie byliśmy w stanie raz że tego zrobić, a dwa - wystąpić o konkretny termin ich wprowadzenia)
+- zaznaczyć ustawienie "Security - Use passcode" w ustawieniach poziomu użytkownika użytkowników technicznych RIS
+
+Nas przed wdrożeniem zmian obliguje oczekiwanie na Waszą akceptację - ponieważ wdrożenie powyżej opisywanych rekonfiguracji w niepełnej ilości może doprowadzić do zablokowania dostępności pewnych badań w ogóle (przy niekompletnym przydzieleniu kodów dostępu dla danych użytkowników technicnych) - nie podejmujemy działań interwencjonalnych bez Waszej odpowiedzi i powrotu do nas z pełną listą wykorzystania danego użytkownika technicznego.
+
+
+Pozdrawiam w imieniu działu serwisu Grupy Q
+Adam Niziński
+ 
+
+________________________________
+
+W dniu 2016-05-23 22:12, Kajkowski Krzysztof napisał(a):
+Adam, z tego co widzę w Jirze to przytoczona przez Ciebie Jira dotyczy wdrożenia w szpitalu Bielańskim i integracji desktopowej z Maximą i ma ustawiony przez Ciebie status Rozwiązne (Resolved).
+ 
+Wyjaśnijmy i przeanalizujmy to w gronie IT i wróćmy jak najszybciej jest to możliwe z pełną odpowiedzią do Biznesu.
+
+Pozdrawiam!
+ 
+Krzysztof Kajkowski
+Kierownik Projektu, Departament Projektów IT
+LUX MED Sp. z o.o., ul. Postępu 21C, 02-676 Warszawa
+m: +48 783 660 377 e: krzysztof.kajkowski@luxmed.pl
+ 
+Wiadomość napisana przez Helpdesk Grupa Q <hd@grupa-q.pl> w dniu 23.05.2016, o godz. 21:58:
+ 
+Krzysztof,
+
+uzupełniam odpowiedź AdamaM - 
+sprawa zidentyfikowana przez Was 22 stycznia 2016 r.
+Opis wątku opisany w JIRA:
+https://jira.luxmed.pl/browse/LNP-1099
+
+Wymiana zdań w JIRA jest trochę potoczną wymianą myśli, w środek testów wplótł się dodatkowy niezależny wątek (hasła tymczasowe), który trochę zaburza opis sytuacji, bo załączone zrzuty ekranowe błędów o hasłach nie dotyczą bezpośrednio tej sprawy, a ta której dotyczą została już rozwiązana.
+
+Reasumując:
+22 stycznia LUX MED zgłasza problem
+22 /23 stycznia identyfikujemy sprawę i opisujemy:
+
+"Wprowadziłem pewne zmiany - dodalem regule "use passcode" dla usera technicznego - teraz nie dopuszcza do badan.
+Na produkcji tez trzeba bedzie to zmienic, tylko w jakim procesie - CR itd? Czy po prostu to zmienic?"
+"Użytkownikom technicznym też trzeba przypisać odpowiednie PASSCODY, a więc muszą oni być wywoływani do badań z danego PASSCODE.
+Nie wiem jak w tej chwili korzystacie z dystrybucji użytkowników technicznych. Może mieć miejsce sytuacja, że jeden użytkownik techniczny odwołuje się do badań z passcodów z których co do zasady do całego zbioru tych passcodów nie powinien mieć dostępu?
+
+Np. user z MAXIMY odwołuje się do badań z PASSCODE LUXMED, LUXMED_ARGUS, LUXMED_ESKULAP ale użytkownicy którzy korzystają z tych linków - niektórzy mają dostęp tylko do LUXMED, a niekótrzy tylko do LUXMED_ARGUS?"
+
+-----
+uwaga dla potrzeb opisu w tym wątku:
+Na powyższe pytanie cały czas nie otrzymaliśmy odpowiedzi - a co za tym idzie nie zostały wprowadzone zmiany.
+--------
+
+24 luty (miesiąc bez dwóch dni po identyfikacji i opisie problemu przez ResQmed)
+- mają miejsce testy LUX MED, które wykazują poprawność identyfikacji i rozwiązania problemu przez ResQmed (status - retest negatywny - wynika z tego że do testów wplótł się niezależny błąd haseł tymczasowych na systemie testowym)
+
+8 marca - ResQmed dopytuje o konfigurację, aby można było wdrożyć zmiany na produkcji:
+"Czekam na Waszą odpowiedź co do dystrybucji Kodów dostepu po użytkownikach technicznych."
+
+19 kwietnia (ponad miesiąc przerwy w wątku)
+LUX MED przeprowadza testy na środowisku PRODUKCYJNYM podczas gdy zmiana nigdy nie była zaaplikowana na środowisku PRODUKCYJNYM, a jedynie na środowisku testowym, do wdrożenia na produkcji zabrakło:
+- odpowiedzi na pytania jak skonfigurować kody dostępu pod użytkowników technicznych z RIS
+- decyzji, że możemy wdrażać na produkcji + całej procedury wprowadzania zmian na produkcji
+
+
+-----------------
+
+Z naszej strony sprawa jest otwarta w tym samym punkcie co w dniu założenia - 
+czekamy na odpowiedź na zadane pytania jakie jest wykorzystanie użytkowników technicznych i jakie kody dostępu każdemu z nich należy przypisać - sprawa do skonfigurowania w kilka minut.
+
+
+
+
+Pozdrawiam w imieniu działu serwisu Grupy Q
+Adam Niziński
+ 
+
+________________________________
+
+W dniu 2016-05-23 17:58, Helpdesk Grupa Q napisał(a):
+Witam,
+Krzysiek problem, który został do Ciebie zgłoszony, został już wcześniej wychwycony przez Przemka. Przemek omówił temat z Adamem N, który wskazał Wam jednoznacznie źródło tego problemu, które polega na konfiguracji link-u w aplikacji RISowej.
+
+Z informacji, którą przekazał mi Adam wynika, że korzystacie ze sztucznie wygenerowanego konta, które posiada dostęp do wszystkich passcodów we wszystkich placówkach- taka jest konkluzja analizy Adama z Przemkiem.
+
+Próbowałem odtworzyć przeprowadzony test na użytkowniku, który posiada wyłącznie passcode LUXMED. Wywołanie tego badania na koncie użytkownika bez dostępu do badań LUXMED_DEMO, powoduje wyrzucenie błędu przeglądarki związanym z brakiem badania.
+
+Adam prześlę Wam ponownie jego uwagi.
+
+Pozdrawiam w imieniu działu serwisu Grupy Q
+Adam Malejka
+ 
+
+________________________________
+
+W dniu 2016-05-23 17:20, Kajkowski Krzysztof napisał(a):
+Dzień dobry,
+ 
+Adam - zgodnie z rozmową proszę o pilne sprawdzenie poniższego przypadku i zachowania systemu o którym pisze Kasia.
+ 
+
+Pozdrawiam!
+ 
+Krzysztof Kajkowski
+Kierownik Projektu, Departament Projektów IT
+LUX MED Sp. z o.o., ul. Postępu 21C, 02-676 Warszawa
+m: +48 783 660 377 e: krzysztof.kajkowski@luxmed.pl
+ 
+Początek przekazywanej wiadomości:
+ 
+Od: Podwojska Katarzyna <Katarzyna.Podwojska@luxmed-diagnostyka.pl>
+Temat: RE: Notatka ze spotkania 2016 05 13
+Data: 23 maja 2016 17:10:05 CEST
+Do: Chudzik Tomasz <Tomasz.Chudzik@luxmed-diagnostyka.pl>, Kajkowski Krzysztof <Krzysztof.Kajkowski@luxmed.pl>
+Dw: Fabiszewski Maciej <Maciej.Fabiszewski@luxmed.pl>, Drabik Agnieszka <Agnieszka.Drabik@luxmed-diagnostyka.pl>, Wójciński Jarosław <Jaroslaw.Wojcinski@luxmed.pl>, Tołkacz Adam <Adam.Tolkacz@Luxmed-diagnostyka.pl>, Pomiankiewicz Przemysław <Przemyslaw.Pomiankiewicz@luxmed.pl>, Puchalski Tomasz <Tomasz.Puchalski@luxmed.pl>, Konieczyńska Emilia <Emilia.Konieczynska@luxmed-diagnostyka.pl>, Sosnowski Cezary <Cezary.Sosnowski@luxmed.pl>, Kietlińska Małgorzata <Malgorzata.Kietlinska@luxmed.pl>
+ 
+Krzysiek sprawdzam te badania ze zbioru 5 i niepokoi mnie jedna rzecz 
+Pracownik który nie ma uprawnień do widoczności badań z Pascode Demo może spokojnie wejść sobie w to badanie z poziomu RIS klikając na ikonkę 
+ 
+<image002.jpg>
+ 
+Ma dostęp do tych właśnie badań których nie widzi z poziomu pacss.( ukrytych)
+Czy w takim razie wejście z linku nie sprawdza uprawnień na "passcode" ? jeśli tak  to po co nam te uprawnienia skoro i tak każdy może sobie te badania oglądać dowoli . Lekarze w taki właśnie sposób wchodzą w badania przez RIS a nie przez Pacss. 
+ 
+Potwierdzone z lekarzem i DJ widza badanie zarówno przez ikonke Pacs Centralny jak i przez Pacs infiniti (demo)
+ 
+Jeden z przypadków ACC 172455
+ 
+Pozdrawiam
+ 
+ 
+ <w_strone_ekologii_new_21c2d46e-f8d8-482e-88d7-7af1561306bc.jpg>
+<logotypy_bupa_pkoi2cd6.jpg>
+<stopka_listek_new72ae.jpg>
+LUX MED Sp. z o.o. z siedzibą w Warszawie przy ul. Postępu 21C, 02-676 Warszawa, wpisana do rejestru przedsiębiorców prowadzonego przez Sąd Rejonowy dla m.st. Warszawy, XIII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000265353, NIP 527-252-30-80 wysokość kapitału zakładowego: 542 728 500,00 zł. Więcej informacji o LUX MED Sp. z o.o. na stronie www.luxmed.pl 
+
+ 
+Zgodnie z art. 24 ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych (Dz. U. 2002r. Nr 101, poz. 926, z późniejszymi zmianami) informujemy, że Administratorem Danych Osobowych jest LUX MED Sp. z o.o. z siedzibą w Warszawie, ul. Postępu 21C. Państwa dane osobowe przetwarzane są w zakresie określonym przepisami prawa lub dobrowolnie podanym w formularzach zgłoszeniowych, w celu realizacji usług medycznych i/lub ubezpieczeniowych oraz zarządzania tymi usługami. Zgodnie z ustawą o ochronie danych osobowych przysługuje Państwu prawo do wglądu, aktualizowania i poprawiania swoich danych. 
+
+ 
+Otrzymana przez Panią/Pana wiadomość oraz załączone do niej pliki stanowią tajemnicę przedsiębiorstwa i są przeznaczone tylko dla wymienionych adresatów. Jeżeli nie są Państwo zamierzonym odbiorcą, proszę poinformować o tym fakcie nadawcę oraz usunąć wiadomość wraz z załącznikami ze swojego systemu. Nie powinni Państwo także ujawniać  otrzymanych informacji nikomu ani sporządzać/zachowywać/dystrybuować żadnej kopii otrzymanych informacji. 
+
+This message and any attachments are confidential as a business secret and are intended solely for the use of the individual or entity to whom they are addressed. If you are not the intended recipient, please telephone or e-mail the sender and delete this message and any attachment from your system. Also, if you are not the intended recipient you should not disclose the content or take/retain/distribute any copies. 
+

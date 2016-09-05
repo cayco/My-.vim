@@ -1,0 +1,99 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	deleted:    content/pl/islandia15/dzien-1.md
+#	deleted:    content/pl/islandia15/dzien-10.md
+#	deleted:    content/pl/islandia15/dzien-11.md
+#	deleted:    content/pl/islandia15/dzien-3.md
+#	deleted:    content/pl/islandia15/dzien-5.md
+#	deleted:    content/pl/islandia15/dzien-6.md
+#	deleted:    content/pl/islandia15/dzien-7.md
+#	deleted:    content/pl/islandia15/dzien-8.md
+#	deleted:    content/pl/islandia15/dzien-9.md
+#	deleted:    content/pl/islandia15/planowanie.md
+#
+# Changes not staged for commit:
+#	modified:   config.toml
+#	modified:   config_en.toml
+#	modified:   data/titles.toml
+#	modified:   data/translations/en-US.yaml
+#	modified:   data/translations/pl-PL.yaml
+#	modified:   public/css/animate.css
+#	modified:   public/css/bloxx-styles.css
+#	modified:   public/css/bootstrap.min.css
+#	modified:   public/css/loader.css
+#	modified:   public/css/main.css
+#	modified:   public/css/prettyPhoto.css
+#	modified:   public/fotografia/fotografia/index.html
+#	modified:   public/fotografia/index.html
+#	modified:   public/fotografia/index.xml
+#	modified:   public/hobby/index.html
+#	modified:   public/hobby/index.xml
+#	modified:   public/hobby/wspinanie/index.html
+#	modified:   public/icons/2.html
+#	modified:   public/img/ico/browserconfig.xml
+#	modified:   public/index.html
+#	modified:   public/index.xml
+#	modified:   public/islandia15/dzien-1/index.html
+#	modified:   public/islandia15/dzien-10/index.html
+#	modified:   public/islandia15/dzien-11/index.html
+#	modified:   public/islandia15/dzien-3/index.html
+#	modified:   public/islandia15/dzien-5/index.html
+#	modified:   public/islandia15/dzien-6/index.html
+#	modified:   public/islandia15/dzien-7/index.html
+#	modified:   public/islandia15/dzien-8/index.html
+#	modified:   public/islandia15/dzien-9/index.html
+#	modified:   public/islandia15/index.html
+#	modified:   public/islandia15/index.xml
+#	modified:   public/islandia15/page/1/index.html
+#	modified:   public/islandia15/planowanie/index.html
+#	modified:   public/js/bloxx.js
+#	modified:   public/js/bootstrap.min.js
+#	modified:   public/js/jquery.isotope.min.js
+#	modified:   public/js/jquery.js
+#	modified:   public/js/jquery.prettyPhoto.js
+#	modified:   public/js/main.js
+#	modified:   public/kontakt/index.html
+#	modified:   public/miejsca/chorwacja/index.html
+#	modified:   public/miejsca/chorwacja/index.xml
+#	modified:   public/miejsca/islandia/index.html
+#	modified:   public/miejsca/islandia/index.xml
+#	modified:   public/podroze/chorwacja15/index.html
+#	modified:   public/podroze/index.html
+#	modified:   public/podroze/index.xml
+#	modified:   public/sitemap.xml
+#	modified:   public/sprzet/index.html
+#	modified:   public/sprzet/index.xml
+#	modified:   public/sprzet/page/1/index.html
+#	modified:   public/sprzet/spiwor/index.html
+#	modified:   public/tagi/chorwacja/index.html
+#	modified:   public/tagi/chorwacja/index.xml
+#	modified:   public/tagi/islandia/index.html
+#	modified:   public/tagi/islandia/index.xml
+#	modified:   public/tagi/motocykl/index.html
+#	modified:   public/tagi/motocykl/index.xml
+#	modified:   public/tagi/planowanie/index.html
+#	modified:   public/tagi/planowanie/index.xml
+#	modified:   public/tagi/rodzina/index.html
+#	modified:   public/tagi/rodzina/index.xml
+#	modified:   public/tagi/sprzęt/index.html
+#	modified:   public/tagi/sprzęt/index.xml
+#	modified:   public/tagi/wyjazd/index.html
+#	modified:   public/tagi/wyjazd/index.xml
+#	modified:   public/tagi/wyprawy/index.html
+#	modified:   public/tagi/wyprawy/index.xml
+#	modified:   titles.toml
+#
+# Untracked files:
+#	public/islandia/
+#	public/js/cookiechoices.js
+#	public/miejsca/mongolia/
+#	public/mongolia/
+#	public/mongolia16/
+#	public/tagi/mongolia/
+#

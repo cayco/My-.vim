@@ -1,0 +1,67 @@
+
+
+Pozdrawiam!
+ 
+Krzysztof Kajkowski
+Kierownik Projektu, Departament Projektów IT
+LUX MED Sp. z o.o., ul. Postępu 21C, 02-676 Warszawa
+m: +48 783 660 377 e: krzysztof.kajkowski@luxmed.pl
+
+Wiadomość napisana przez Wojciechowski Marcin <Marcin.Wojciechowski@luxmed.pl> w dniu 23.05.2016, o godz. 13:43:
+
+Potwierdzam termin wdrożenia zintegrowanego 4Net 1.30 – zgodnie z planem jest to 23 maja.
+ 
+Ramowy harmonogram prac dla wdrożenia zintegrowanego 4Net 1.30 jest następujący:
+ 
+Czynność
+Start
+Stop
+Parametryzacja środowiska produkcyjnego dla prac wdrożeniowych
+Backup aplikacji
+2016-05-23 10:00
+2016-05-23 18:00
+Rozpoczęcie głównej części wdrożenia
+2016-05-23 21:00
+Zatrzymanie systemów i kanałów komunikacyjnych
+2016-05-23 21:10
+2016-05-23 22:00
+Backup baz
+2016-05-23 22:00
+2016-05-24 00:00
+Deploy części binarnej
+2016-05-23 22:00
+2016-05-23 23:00
+Deploy części bazodanowej
+2016-05-24 00:00
+2016-05-24 01:00
+Podnoszenie systemów i "rozgrzanie aplikacji"
+2016-05-24 01:00
+2016-05-24 01:30
+Testy systemów
+2016-05-24 01:30
+2016-05-24 5:30
+Podsumowanie wdrożenia i komunikacja
+2016-05-24 05:30
+2016-05-24 06:00
+Zakończenie wdrożenia
+2016-05-24 6:00
+Stabilizacja
+2016-05-24 7:00
+2016-05-25 17:00
+ 
+Zespół wdrożeniowy rozpoczyna pracę w następujących godzinach:
+·         Infrastruktura – Budynek C (na swoich miejscach) – od godziny 19:30
+·         Utrzymanie – Budynek C, s. Łódź – od godziny 00:30
+·         Deweloperzy – Budynek D (na swoich miejscach) – od godziny 00:00, a wskazane osoby od 22:00
+·         Analitycy – od godziny 00:30
+·         Automatyzacja Testów – od godziny 21:30
+ 
+Szczegółowe informację będą rozesłane i umieszczone na confluence do 15:30.
+ 
+Pozdrawiam
+Marcin Wojciechowski
+Kierownik Działu Wsparcia Wdrożeń, Departament Rozwoju IT
+LUX MED Sp. z o.o., ul. Postępu 21C, 02-676 Warszawa
+t: 22 450 43 70
+m: 725 259 082 e: marcin.wojciechowski@luxmed.pl
+ <w_strone_ekologii_new_21c2d46e-f8d8-482e-88d7-7af1561306bc.jpg>

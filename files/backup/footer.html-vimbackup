@@ -1,0 +1,70 @@
+    <section id="bottom" class="wet-asphalt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <h4>O mnie</h4>
+                    <p>Prywatnie, jestem tym co robię, a publiczne szczegóły są na całej <br>tej stronie ;)</p>
+                    <p>W pracy prowadzę projekty - to mój zawód i także moja pasja. Lubię zmiany i duże wyzwania. Jeśli chcesz wiedzieć więcej - zapraszam na <a href="https://www.linkedin.com/in/cayco">LinkedIn</a></p>
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+            
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+
+{{ partial "ostatnie.html" . }}
+                  
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    
+                </div> <!--/.col-md-3-->
+            </div>
+        </div>
+    </section><!--/#bottom-->
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2015 <a target="_blank" href="http://www.cayco.pl/" title="Strona domowa Krzysztof Kajkowski cayco">Krzysztof Kajkowski</a>. Wszystkie prawa zastrzeżone.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">Strona główna</a></li>
+                        <li><a href="kontakt">Kontakt</a></li>
+
+                        <li><a id="gototop" class="gototop" href="#"><i class="icon-chevron-up"></i></a></li><!--#gototop-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.prettyPhoto.js"></script>
+    <script src="/js/main.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-129155-9', 'auto');
+ga('require', 'linkid');
+ga('send', 'pageview');
+
+</script>
+<script src="/js/cookiechoices.js" defer></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    window.cookieChoices && cookieChoices.showCookieConsentBar && cookieChoices.showCookieConsentBar(
+        (window.cookieOptions && cookieOptions.msg) || 'Na tej stronie używamy plików cookie Google, by móc świadczyć Ci usługi, personalizować reklamy i analizować ruch. Informacje o tym, jak korzystasz z tej strony, są udostępniane Google. Korzystając z niej, zgadzasz się na to.',
+        (window.cookieOptions && cookieOptions.close) || 'Rozumiem');
+  });
+</script>
+</body>
+</html>
