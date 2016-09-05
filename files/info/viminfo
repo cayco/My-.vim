@@ -122,17 +122,20 @@ $
 	5
 
 # File marks:
-'0  1  25  ~/Sites/cayco-hugo/.git/COMMIT_EDITMSG
-'1  5  0  ~/Sites/cayco-hugo/.git/COMMIT_EDITMSG
-'2  106  0  ~/.vimrc
-'3  10  0  ~/Sites/cayco-hugo/content/pl/mongolia/planowanie.md
-'4  96  1  ~/.vimrc
-'5  3  0  ~/Sites/cayco-hugo
-'6  1  0  ~/Sites/cayco-hugo/themes/cayco/layouts
-'7  127  10  ~/.vimrc
-'8  50  26  ~/Documents/mongolia.md
+'0  3  0  ~/.vim/.git/COMMIT_EDITMSG
+'1  1  25  ~/Sites/cayco-hugo/.git/COMMIT_EDITMSG
+'2  5  0  ~/Sites/cayco-hugo/.git/COMMIT_EDITMSG
+'3  106  0  ~/.vimrc
+'4  10  0  ~/Sites/cayco-hugo/content/pl/mongolia/planowanie.md
+'5  96  1  ~/.vimrc
+'6  3  0  ~/Sites/cayco-hugo
+'7  1  0  ~/Sites/cayco-hugo/themes/cayco/layouts
+'8  127  10  ~/.vimrc
+'9  50  26  ~/Documents/mongolia.md
 
 # Jumplist (newest first):
+-'  3  0  ~/.vim/.git/COMMIT_EDITMSG
+-'  1  0  ~/.vim/.git/COMMIT_EDITMSG
 -'  1  25  ~/Sites/cayco-hugo/.git/COMMIT_EDITMSG
 -'  5  0  ~/Sites/cayco-hugo/.git/COMMIT_EDITMSG
 -'  106  0  ~/.vimrc
@@ -232,6 +235,12 @@ $
 -'  4  0  ~/Sites/cayco-hugo/content
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/.git/COMMIT_EDITMSG
+	"	3	0
+	^	3	0
+	.	2	0
+	+	2	0
 
 > ~/Sites/cayco-hugo/.git/COMMIT_EDITMSG
 	"	1	25
@@ -1759,37 +1768,3 @@ $
 
 > ~/Downloads/@Working/letsencrypt/ss
 	"	1	0
-
-> ~/Dropbox/Notatki/his_simple_13.06.2016
-	"	32	7
-	^	34	6
-	.	34	5
-	+	1	0
-	+	89	15
-	+	35	7
-	+	34	4
-	+	35	6
-	+	32	8
-	+	34	5
-	+	37	0
-	+	35	14
-	+	34	5
-	+	32	0
-	+	33	8
-	+	35	0
-	+	33	19
-	+	34	0
-	+	33	24
-	+	14	25
-	+	15	17
-	+	18	0
-	+	17	16
-	+	20	21
-	+	21	27
-	+	22	25
-	+	24	17
-	+	25	21
-	+	27	22
-	+	30	23
-	+	31	19
-	+	34	5
