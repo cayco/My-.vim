@@ -67,6 +67,11 @@ wyłącz podświetlenieu    \q           N
 wróć do bufora           Ctrl-E       N
 insert surround          ys<obj>)     N
 sneak search             s{char}{char}N
+multicursors             Ctrl-n       N
+remove no copy           X            N
+markdown link            \4           N
+set spell                \s           N
+easy align               \|           N
 }}}
 
 File {{{1

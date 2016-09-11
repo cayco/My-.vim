@@ -11,6 +11,9 @@ s = s.gsub /^(- *|\* *){3,}$/, '[hr]'
 # image that sends to url
 s = s.gsub /\[!\[[^\]]*\]\(([^)]*)\)\]\(([^)]*)\)/, '[url=\2][img=\1][/url]'
 
+# image that sends to url, from Flickr generated data-flickr-embed code
+s = s.gsub /^\<a\sdata[\s\S]*?href\=(\".*?\")[\s\S]*?src\=(\".*?\")[\s\S]*?script\>$/, '[url]\1[img]\2[/img]][/url]'
+
 # image
 s = s.gsub /!\[[^\]]*\]\(([^)]*)\)/, '[img=\1]'
 
@@ -47,9 +50,9 @@ s = s.gsub /(^ {4}|\t)/, '' # middle
 s = s.gsub /`(.*?)`/, '[background=#eee][font=courier new,courier,monospace]\1[/font][/background]'
 
 # headers
-s = s.gsub /^#\s(.*?)[ #]*$/, '[size=7][b]\1[/b][/size]' # big
-s = s.gsub /^##\s(.*?)[ #]*$/, '[size=6][b]\1[/b][/size]' # medium
-s = s.gsub /^###\s(.*?)[ #]*$/, '[size=5][b]\1[/b][/size]' # small
+s = s.gsub /^#\s(.*?)[ #]*$/, '[size=170][b]\1[/b][/size]' # big
+s = s.gsub /^##\s(.*?)[ #]*$/, '[size=160][b]\1[/b][/size]' # medium
+s = s.gsub /^###\s(.*?)[ #]*$/, '[size=150][b]\1[/b][/size]' # small
 
 # lists
 ## unordered

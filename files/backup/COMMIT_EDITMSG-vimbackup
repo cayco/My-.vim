@@ -2,13 +2,46 @@
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
 # On branch master
-# Changes to be committed:
-#	new file:   .vimrc
+# Your branch is up-to-date with 'origin/master'.
 #
-# Changes not staged for commit:
-#	modified:   plugged/nvim (modified content)
-#	modified:   plugged/vim-pad (untracked content)
+# Changes to be committed:
+#	modified:   content/pl/mongolia/dni-1-3.md
+#	modified:   content/pl/mongolia/dzien-4.md
+#	modified:   public/fotografia/fotografia/index.html
+#	modified:   public/hobby/wspinanie/index.html
+#	modified:   public/islandia/index.html
+#	modified:   public/kontakt/index.html
+#	modified:   public/miejsca/mongolia/index.html
+#	modified:   public/miejsca/mongolia/index.xml
+#	modified:   public/mongolia/index.html
+#	modified:   public/mongolia/index.xml
+#	modified:   public/mongolia/planowanie/index.html
+#	modified:   public/podroze/chorwacja15/index.html
+#	modified:   public/podroze/index.html
+#	modified:   public/sitemap.xml
+#	modified:   public/sprzet/spiwor/index.html
+#	modified:   public/tagi/mongolia/index.html
+#	modified:   public/tagi/mongolia/index.xml
+#	modified:   public/tagi/motocykl/index.xml
+#	modified:   public/tagi/wyprawy/index.xml
 #
 # Untracked files:
-#	.netrwhist
+#	.DS_Store
+#	layouts/.DS_Store
+#	public/.DS_Store
+#	public/bbcode/
+#	public/img/.DS_Store
+#	public/img/slider/.DS_Store
+#	public/miejsca/rosja/
+#	public/mongolia/dni-1-3/
+#	public/mongolia/dzien-1/
+#	public/mongolia/dzien-4/
+#	public/tagi/rosja/
+#	static/.DS_Store
+#	static/img/.DS_Store
+#	static/img/slider/.DS_Store
+#	themes/.DS_Store
+#	themes/cayco/.DS_Store
+#	themes/cayco/layouts/.DS_Store
+#	themes/cayco/static/.DS_Store
 #

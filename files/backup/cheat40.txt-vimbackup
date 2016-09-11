@@ -51,17 +51,26 @@ About {{{2
        or after an operator)
   O    Operator (use in Visual mode, or
        before a motion or a text object)
-  *    Acts on text under/after cursor
+  *    Acts on text under/after cursor }}}
 }}}
 
 Moje {{{1
 autofil                  C-D          N
 promote heading          C-t          N
-demote heading      C-d
-checkbox        \cn
-insert date     \pa
-redo                C-r
-zaznaczanie Alt-Commandi działa copy&paste
+demote heading           C-d          N
+checkbox                 \cn          N
+insert date              \pa          N
+redo                     C-r          N
+zaznaczanie Alt-Command  copy&paste   N
+rejestry                 :reg         N
+wyłącz podświetlenieu    \q           N
+wróć do bufora           Ctrl-E       N
+insert surround          ys<obj>)     N
+sneak search             s{char}{char}N
+multicursors             Ctrl-n       N
+remove no copy           X            N
+markdown link            \4           N
+set spell                \s           N
 }}}
 
 File {{{1

@@ -4,6 +4,14 @@
 
 " You want Vim, not vi. When Vim finds a vimrc, 'nocomptaible' is set anyway.
 " We set it explicitely to make our position clear!
+
+" vim-plug (https://github.com/junegunn/vim-plug) settings 
+" Automatically install vim-plug and run PlugInstall if vim-plug not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
 set nocompatible
 scriptencoding utf-8
 filetype plugin indent on  " Load plugins according to detected filetype.
@@ -25,6 +33,9 @@ set showcmd                " Show already typed keys when more are expected.
 
 set incsearch              " Highlight while searching with / or ?.
 set hlsearch               " Keep matches highlighted.
+set ignorecase
+set smartcase              " disable ignorecase when using any capital letter
+nmap \q :nohlsearch<CR>    " Disable search higlight when is annoying
 
 set ttyfast                " Faster redrawing.
 set lazyredraw             " Only redraw when necessary.
@@ -53,9 +64,20 @@ endif
 " Plug
 "
 call plug#begin('~/.vim/plugged')
-
+Plug 'honza/vim-snippets'
+Plug 'kana/vim-textobj-user'
+Plug 'sudar/vim-arduino-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'vim-airline/vim-airline'
+Plug 'lucapette/vim-textobj-underscore' | Plug 'kana/vim-textobj-user'
+Plug 'jceb/vim-textobj-uri'             | Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-indent'          | Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-user'
+Plug 'sts10/vim-mustard'
+Plug 'https://github.com/terryma/vim-smooth-scroll.git'
 Plug 'tpope/vim-speeddating'
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/vim-easy-align'
 Plug 'mattn/calendar-vim'
 Plug 'amix/vim-zenroom2'
 Plug 'https://github.com/fmoralesc/vim-pad.git'
@@ -71,6 +93,12 @@ Plug 'plasticboy/vim-markdown'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/tpope/vim-vinegar.git'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plug 'https://github.com/flazz/vim-colorschemes.git'
+Plug 'https://github.com/justinmk/vim-sneak.git'
+Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'https://github.com/Raimondi/delimitMate.git'
+Plug 'https://github.com/terryma/vim-multiple-cursors.git'
+Plug 'vimoutliner/vimoutliner/'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -95,13 +123,16 @@ autocmd BufRead,BufNewFile *.txt set filetype=org
 " au! BufRead,BufNewFile *.md       set filetype=mkd
 " autocm VimEnter *.mk Goyo
 
+" Vim outline
+au! BufRead,BufNewFile *.otl setfiletype votl
+
 augroup pencil
   autocmd!
   autocmd FileType markdown,mkd call pencil#init()
-  autocmd FileType text         call pencil#init()
 augroup END
 let g:vim_markdown_toml_frontmatter = 1
 let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_frontmatter = 1
 
 " VIM-pad config
 "
@@ -124,11 +155,9 @@ vnoremap <Space> zf
 set spell spelllang=pl
 
 set nospell
+nnoremap <Leader>s :set spell<CR>
 
 set relativenumber
-noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
-noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
-
 call tcomment#DefineType('markdown', '> %s')
 
 set clipboard+=unnamed
@@ -159,3 +188,68 @@ nnoremap <Leader>3 ciw[<C-r>"]()<Esc>
 vnoremap <Leader>3 c[<C-r>"]()<Esc>
 nnoremap <Leader>4 ciw[<C-r>"](<Esc>"*pli)<Esc>
 vnoremap <Leader>4 c[<C-r>"](<Esc>"*pli)<Esc>
+
+" Set paste off to pasting
+nmap \o :set paste<CR>
+
+" Go back to previously edited file
+"nmap <C-e> :e#<CR>
+
+" Ctrl-P configuration
+nmap ; :CtrlPBuffer<CR>
+let g:ctrlp_map = '<Leader>t'
+let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_dotfiles = 0
+let g:ctrlp_switch_buffer = 0
+
+colors zenburn
+
+" Powerline
+" python from powerline.vim import setup as powerline_setup
+" python powerline_setup()
+" python del powerline_setup
+
+
+" Smooth scroll
+noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 30, 2)<CR>
+noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 30, 2)<CR>
+noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 30, 4)<CR>
+noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 30
+" j and k don't skip over wrapped lines in following FileTypes, unlehonza/vim-snippetsss given a count (helpful since I display relative line numbers in these file types)
+" autocmd FileType html nnoremap <expr> j v:count ? 'j' : 'gj'
+" autocmd FileType html nnoremap <expr> k v:count ? 'k' : 'gk'
+" autocmd FileType markdown nnoremap <expr> j v:count ? 'j' : 'gj'
+" autocmd FileType markdown nnoremap <expr> k v:count ? 'k' : 'gk'
+" set it for all files
+noremap <silent> <expr> j v:count ? 'j' : 'gj'
+noremap <silent> <expr> k v:count ? 'k' : 'gk'
+
+
+" Sneak
+let g:sneak#s_next = 1
+
+set laststatus=2 " Always display the statusline in all windows
+set showtabline=2 " Always display the tabline, even if there is only one tab
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+
+" Make X an operator that removes text without placing text in the default registry
+nmap X "_d
+nmap XX "_dd
+vmap X "_d
+vmap x "_d
+
+" Insert newline in Normal Mode. You can p line then.
+nmap <CR> o<Esc>j
+
+let g:airline_powerline_fonts = 1
+
+" UltiSnip conf for TAB
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" Align GitHub-flavored Markdown tables
+vmap <Leader><Bar> :EasyAlign*<Bar><Enter>

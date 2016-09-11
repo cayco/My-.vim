@@ -64,15 +64,20 @@ endif
 " Plug
 "
 call plug#begin('~/.vim/plugged')
+Plug 'honza/vim-snippets'
 Plug 'kana/vim-textobj-user'
+Plug 'sudar/vim-arduino-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'vim-airline/vim-airline'
 Plug 'lucapette/vim-textobj-underscore' | Plug 'kana/vim-textobj-user'
 Plug 'jceb/vim-textobj-uri'             | Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-indent'          | Plug 'kana/vim-textobj-user'
-Plug 'kana/vim-textobj-line'            | Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-user'
 Plug 'sts10/vim-mustard'
 Plug 'https://github.com/terryma/vim-smooth-scroll.git'
 Plug 'tpope/vim-speeddating'
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/vim-easy-align'
 Plug 'mattn/calendar-vim'
 Plug 'amix/vim-zenroom2'
 Plug 'https://github.com/fmoralesc/vim-pad.git'
@@ -92,6 +97,8 @@ Plug 'https://github.com/flazz/vim-colorschemes.git'
 Plug 'https://github.com/justinmk/vim-sneak.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/Raimondi/delimitMate.git'
+Plug 'https://github.com/terryma/vim-multiple-cursors.git'
+Plug 'vimoutliner/vimoutliner/'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -115,6 +122,9 @@ autocmd BufRead,BufNewFile *.txt set filetype=org
 " au! BufRead,BufNewFile *.markdown set filetype=mkd
 " au! BufRead,BufNewFile *.md       set filetype=mkd
 " autocm VimEnter *.mk Goyo
+
+" Vim outline
+au! BufRead,BufNewFile *.otl setfiletype votl
 
 augroup pencil
   autocmd!
@@ -145,6 +155,7 @@ vnoremap <Space> zf
 set spell spelllang=pl
 
 set nospell
+nnoremap <Leader>s :set spell<CR>
 
 set relativenumber
 call tcomment#DefineType('markdown', '> %s')
@@ -197,17 +208,17 @@ let g:ctrlp_switch_buffer = 0
 colors zenburn
 
 " Powerline
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+" python from powerline.vim import setup as powerline_setup
+" python powerline_setup()
+" python del powerline_setup
 
 
 " Smooth scroll
-noremap <silent> <c-e> :call smooth_scroll#up(&scroll, 30, 2)<CR>
+noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 30, 2)<CR>
 noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 30, 2)<CR>
 noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 30, 4)<CR>
 noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 30
-" j and k don't skip over wrapped lines in following FileTypes, unless given a count (helpful since I display relative line numbers in these file types)
+" j and k don't skip over wrapped lines in following FileTypes, unlehonza/vim-snippetsss given a count (helpful since I display relative line numbers in these file types)
 " autocmd FileType html nnoremap <expr> j v:count ? 'j' : 'gj'
 " autocmd FileType html nnoremap <expr> k v:count ? 'k' : 'gk'
 " autocmd FileType markdown nnoremap <expr> j v:count ? 'j' : 'gj'
@@ -233,3 +244,15 @@ vmap x "_d
 " Insert newline in Normal Mode. You can p line then.
 nmap <CR> o<Esc>j
 
+let g:airline_powerline_fonts = 1
+
+" UltiSnip conf for TAB
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" Align GitHub-flavored Markdown tables
+vmap <Leader><Bar> :EasyAlign*<Bar><Enter>
+
+" Fix EasyAlign and Explore ambigous E command
+cabbrev E Explore
