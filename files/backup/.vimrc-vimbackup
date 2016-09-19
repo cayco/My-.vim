@@ -137,7 +137,7 @@ let g:vim_markdown_frontmatter = 1
 " VIM-pad config
 "
 " defulat dir
-let g:pad#dir = "~/Dropbox/Notatki"
+let g:pad#dir = "~//Users/cayco/Library/Mobile\ Documents/com~apple~CloudDocs/Notatki"
 " search window height
 let g:pad#window_height = 10
 " autorename files while save
@@ -193,7 +193,7 @@ vnoremap <Leader>4 c[<C-r>"](<Esc>"*pli)<Esc>
 nmap \o :set paste<CR>
 
 " Go back to previously edited file
-"nmap <C-e> :e#<CR>
+nmap <C-e> :e#<CR>
 
 " Ctrl-P configuration
 nmap ; :CtrlPBuffer<CR>
@@ -253,3 +253,6 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Align GitHub-flavored Markdown tables
 vmap <Leader><Bar> :EasyAlign*<Bar><Enter>
+
+" Fix EasyAlign and Explore ambigous E command
+cabbrev E Explore

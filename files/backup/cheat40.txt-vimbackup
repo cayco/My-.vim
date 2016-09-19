@@ -71,6 +71,7 @@ multicursors             Ctrl-n       N
 remove no copy           X            N
 markdown link            \4           N
 set spell                \s           N
+easy align               \|           N
 }}}
 
 File {{{1

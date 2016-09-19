@@ -72,6 +72,7 @@ remove no copy           X            N
 markdown link            \4           N
 set spell                \s           N
 easy align               \|           N
+comment line             gc<motion>   N
 }}}
 
 File {{{1

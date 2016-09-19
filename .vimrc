@@ -137,7 +137,7 @@ let g:vim_markdown_frontmatter = 1
 " VIM-pad config
 "
 " defulat dir
-let g:pad#dir = "~/Dropbox/Notatki"
+let g:pad#dir = "~/Library/Mobile\ Documents/com~apple~CloudDocs/Notatki"
 " search window height
 let g:pad#window_height = 10
 " autorename files while save

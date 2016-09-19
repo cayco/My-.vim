@@ -1,2 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/cayco'
+let g:netrw_dirhist_2='/Users/cayco/Documents'
+let g:netrw_dirhist_3='/Users/cayco/Sites/cayco-hugo/content/pl/mongolia'
+let g:netrw_dirhist_4='/Users/cayco'
+let g:netrw_dirhist_5='/Users/cayco/Sites'
+let g:netrw_dirhist_6='/Users/cayco/Sites/cayco-hugo'
+let g:netrw_dirhist_7='/Users/cayco/Sites/cayco-hugo/content'
+let g:netrw_dirhist_8='/Users/cayco/Sites/cayco-hugo/content/pl'
+let g:netrw_dirhist_9='/Users/cayco/Sites/cayco-hugo/content/pl/mongolia'
